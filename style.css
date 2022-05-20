@@ -25,7 +25,6 @@ body {
     font-family: "Red Hat Display", sans-serif;
     background-image: url(/images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-color: var(--Pale-blue);
 }
 
@@ -41,13 +40,14 @@ body {
     font-size: 12px;
 }
 .card__main__title,
-.card__main__plan__desc,
-.card__main__cancelBtn {
+.card__main__plan__desc
+ {
     color: var(--Dark-blue);
 }
 
 .card__main__dec,
-span {
+span,
+.card__main__cancelBtn {
     color: var(--Desaturated-blue);
 }
 /* laytout */
@@ -94,10 +94,16 @@ span {
 }
 .card__main__plan__change {
     cursor: pointer;
+    margin-right: 10px;
 }
 .card__main__plan__desc {
-    margin-left: -48px;
+    font-weight: 700;
+    margin-left: -45px;
 }
+.card__main__plan__desc span{
+    font-weight: 500;
+}
+
 .card__main__paymentBtn {
     cursor: pointer;
     width: 100%;
@@ -107,6 +113,7 @@ span {
     color: var(--Pale-blue);
     font-weight: bold;
     padding: 10px 0px;
+    box-shadow: 0px 3px 8px -1px var(--Bright-blue);
 }
 .card__main__cancelBtn {
     cursor: pointer;
