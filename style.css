@@ -65,12 +65,15 @@ span {
     background-color: var(--Very-pale-blue);
     overflow: hidden;
 }
-.card * {
-    margin-bottom: 10px;
-}
+
 .card__top__img {
     width: 300px;
+    margin-bottom: 20px;
 }
+.card__main * {
+    margin-bottom: 20px;
+}
+
 .card__main__title {
     text-align: center;
 }
@@ -83,10 +86,13 @@ span {
     align-items: center;
     justify-content: space-between;
     background-color: var(--Pale-blue);
-    padding: 0px 10px;
+    padding: 5px 10px;
     border-radius: var(--border-radius);
 }
-.card__main__plan__change{
+.card__main__plan *{
+    margin-bottom: 0;
+}
+.card__main__plan__change {
     cursor: pointer;
 }
 .card__main__plan__desc {
@@ -102,7 +108,7 @@ span {
     font-weight: bold;
     padding: 10px 0px;
 }
-.card__main__cancelBtn{
+.card__main__cancelBtn {
     cursor: pointer;
     text-align: center;
 }
