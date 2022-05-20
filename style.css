@@ -85,7 +85,7 @@ span,
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--Pale-blue);
+    background-color: hsla(225, 100%, 94%, 0.575) ;
     padding: 5px 10px;
     border-radius: var(--border-radius);
 }
@@ -94,11 +94,10 @@ span,
 }
 .card__main__plan__change {
     cursor: pointer;
-    margin-right: 10px;
 }
 .card__main__plan__desc {
     font-weight: 700;
-    margin-left: -45px;
+    flex-basis: 105px;
 }
 .card__main__plan__desc span{
     font-weight: 500;
