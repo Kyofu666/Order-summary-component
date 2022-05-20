@@ -1,0 +1,108 @@
+html {
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* ### Primary */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /* ### Neutral */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+    --border-radius: 10px;
+}
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Pale-blue);
+}
+
+/* typography */
+
+.bigText {
+    font-size: 20px;
+}
+.mediumText {
+    font-size: 14px;
+}
+.smallText {
+    font-size: 12px;
+}
+.card__main__title,
+.card__main__plan__desc,
+.card__main__cancelBtn {
+    color: var(--Dark-blue);
+}
+
+.card__main__dec,
+span {
+    color: var(--Desaturated-blue);
+}
+/* laytout */
+.card__container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: var(--border-radius);
+    background-color: var(--Very-pale-blue);
+    overflow: hidden;
+}
+.card * {
+    margin-bottom: 10px;
+}
+.card__top__img {
+    width: 300px;
+}
+.card__main__title {
+    text-align: center;
+}
+.card__main__dec {
+    max-width: 240px;
+    text-align: center;
+}
+.card__main__plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Pale-blue);
+    padding: 0px 10px;
+    border-radius: var(--border-radius);
+}
+.card__main__plan__change{
+    cursor: pointer;
+}
+.card__main__plan__desc {
+    margin-left: -48px;
+}
+.card__main__paymentBtn {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Bright-blue);
+    color: var(--Pale-blue);
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.card__main__cancelBtn{
+    cursor: pointer;
+    text-align: center;
+}
